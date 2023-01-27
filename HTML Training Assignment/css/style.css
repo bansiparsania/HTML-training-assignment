@@ -1,0 +1,77 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+body{
+    background-color:gainsboro;
+}
+.header1 img {
+    width: 10cm;
+    height: 10cm;
+    border-radius: 50%;
+
+}
+
+
+.zero {
+    padding-left: 22%;
+    padding-top: 13%;
+}
+.first{
+    padding-right: 24%;
+    padding-top: 13%;
+}
+.first img{
+    width: 5cm;
+    height: 1cm;
+}
+.first p{
+    font-size: xx-large;
+    margin: 4px 3px;
+
+}
+.first input{
+    width: 7cm;
+    height: 0.7cm;
+}
+.first button{
+    background-color: red;
+    color: white;
+    height: 0.9cm;
+    width: 2.5cm;
+    border-radius: 16px;
+    border-color: red;
+    text-align: center;
+    display: inline-block;
+    
+}
+.first a{
+    color: grey;
+    font-size: smaller;
+    padding-left: 2cm;
+    text-decoration: none;
+ }
+.word{
+    color: red;
+}
+
+
+.second a{
+    text-decoration: none;
+    padding: 0px 0px;
+    
+}
+.second p{
+     font-size:smaller ;
+    color: grey;
+}
+
+.icon1 .icon01 img{
+    width: 1cm;
+    height: 1cm;
+}
+.icon1 .icon02 img {
+    width: 3cm;
+    height: 1cm;
+}
