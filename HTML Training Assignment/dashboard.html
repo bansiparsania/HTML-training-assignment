@@ -1,44 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width-device-width, initial-scale=1.0" />
     <link rel="icon" href="./images/favicon.ico" />
     <link rel="stylesheet" href="./css/style.css" />
-    <!--<link rel="stylesheet" href="./css/bootstrap.min.css"/>-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <title>Dashboard-Company</title>
-</head>
+  </head>
 
-<body>
-     <header>
-            <div class="header1">
+  <body>
+    <header>
+      <div class="header">
+        <div class="part1">
+          <img class="part11" src="./images/menu-bar.png" />
+          <img class="part12" src="./images/logo.png" />
+        </div>
+        <div class="search-box">
+          <a href="#" class="search-icon">
+            <img class="icon" src="./images/search-icon.png" />
+          </a>
+          <input class="search-input" type="text" placeholder="Search" />
+        </div>
 
-                <div class="icon1">
-                    <img class="icon01" src="./images/menu-bar.png"/>
-                    
-                    <img src="./images/logo.png" class="icon02" />
-                
-            
-              <div class="search box">
-                <img class="icon03" src="./images/search-icon.png"/>
-                <input class="search-input" type="text" placeholder="Search"/> 
-              </div>
-              </div>
-              <div>
-                <img src="./images/notification-icon.png"/>
-              </div>
-            
+        <div class="right-header">
+          <a href="#" class="notification-icon"
+            ><img
+              class="icon"
+              src="./images/notification-icon.png"
+              alt="notification-icon"
+          /></a>
+
+          <div class="profile-box">
+            <img
+              class="profile-image"
+              src="./images/profile.png"
+              alt="profile-image"
+            />
+            <span>John Doe</span>
+            <a href="#" class="down-arrow-icon"
+              ><img src="./images/downward-arrow.png" alt="down-arrow-icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="fluid-container">
+      <div class="nav">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class="nav-icon-box icon-box-active">
+              <img class="icon" src="./images/dashboard-active.png" alt="" />
+              <p>Dashboard</p>
             </div>
-
-
-
-
-
-     </header>
-
-
-</body>
-
+          </li>
+          <li class="list-group-item">
+            <div class="nav-icon-box">
+              <img class="icon" src="./images/graph-default.png" alt="" />
+              <p>Analysis</p>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="nav-icon-box">
+              <img class="icon" src="./images/inbox-default.png" alt="" />
+              <p>Inbox</p>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="nav-icon-box">
+              <img class="icon" src="./images/clock-default.png" alt="" />
+              <p>History</p>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="nav-icon-box">
+              <img class="icon" src="./images/clock-default.png" alt="" />
+              <p>History</p>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="nav-icon-box">
+              <img class="icon" src="./images/user-default.png" alt="" />
+              <p>Users</p>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="nav-icon-box">
+              <img class="icon" src="./images/maintenance-default.png" alt="" />
+              <p>Maintenance</p>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="nav-icon-box">
+              <img class="icon" src="./images/setting-default.png" alt="" />
+              <p>Setting</p>
+            </div>
+          </li>
+        </ul>
+         
+        <img class="graph-box" src="./images/data-graph.png" />
+      </div>
+    </div>
+  </body>
 </html>
