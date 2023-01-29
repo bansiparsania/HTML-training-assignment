@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner page</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid p-0" style="background-color: #fafafa;">
+        <div class="row  mt-4 mx-3" style="background-color: #ffffff;">
+            <div class="col-3 text-start">
+                <img src="./images/menu-bar.png" class="me-4">
+                <img src="./images/header-logo.png" class="me-4">
+            </div>
+            <div class="col-3 text-start">
+                <img src="./images/search-icon.png" class="icon mx-2 ">
+                <span class="items">Search</span>
+            </div>
+            <div class="col-6 text-end">
+                <img src="./images/notification-icon.png" class="icon">
+                <img src="./images/profile.png" class="fs-2 me-1 ms-5">
+                <span class="name mx-2">John Doe</span>
+                <img src="./images/downward-arrow.png" class="icon">
+            </div>
+        </div>
+
+        <div class="dashboard row ">
+            <div class="col-2" style="background-color: #ffffff;">
+                <div class="list-group list-group-flush ms-3 mt-4">
+                    <a href="index.html" class="list-group-item items "><img src="./images/dashboard-default.png" class="icon me-2">Dashboard</a>
+
+                    <a href="#" class="list-group-item items activelink"><img src="./images/graph-active.png" class="icon me-2">Analysis</a>
+
+                    <a href="#" class="list-group-item items"><img src="./images/inbox-default.png" class="icon me-2">Inbox</a>
+
+                    <a href="#" class="list-group-item items"><img src="./images/clock-default.png" class="icon me-2">History</a>
+
+                    <a href="#" class="list-group-item items"><img src="./images/user-default.png" class="icon me-2">Users</a>
+
+                    <a href="#" class="list-group-item items"><img src="./images/maintenance-default.png" class="icon me-1">Maintainence</a>
+
+                    <a href="#" class="list-group-item items"><img src="./images/setting-default.png" class="icon me-2">Setting</a>
+                </div>
+            </div>
+            <div class="col-10 p-4">
+                <h4 class="d-name">Analysis</h4>
+                <form class="form p-2">
+                    <p class="form-head">One Column</p>
+                    <input class="form-control mb-3" type="text" placeholder="Name">
+                    <select class="form-control mb-3">
+                        <option>Dropdown</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <textarea class="form-control mb-3" type="text" rows="4" placeholder="Multiple line"></textarea>
+                </form>
+
+                <form class="form mt-4 p-2">
+                    <p class="form-head">Two Column</p>
+                    <div class="row row-cols-2">
+                        <div class="col mb-3"><input class="form-control col-6" type="text" placeholder="Name"></div>
+
+                        <div class="col mb-3"><input class="form-control col-6" type="text" placeholder="Username"></div>
+
+                        <div class="col mb-3"><input class="form-control col-6" type="text" placeholder="Password"></div>
+
+                        <div class="col">
+                            <select class="form-control col-6">
+                                <option class="form-control">Dropdown</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+
+
+                <form class="form mt-4 p-2">
+                    <p class="form-head">Three Column</p>
+                    <div class="row row-cols-3">
+                        <div class="col mb-3"><input class="form-control col-6" type="text" placeholder="Focus"></div>
+
+                        <div class="col mb-3"><input class="form-control col-6" type="password" placeholder="Password"></div>
+
+                        <div class="col mb-3"><input class="form-control col-6 disabled" type="text" placeholder="Dissabled"></div>
+                    </div>
+                </form>
+
+                <p class="form-head">Other Design Eslements</p>
+                <div>
+                    <p class="sub-head">File Upload</p>
+                    <div class="form-group">
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                </div>
+
+                <p class="sub-head">Radio Button</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">option 1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">option 2</label>
+                </div>
+
+                <p class="sub-head">Checkbox</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Option 1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Option 2</label>
+                </div>
+
+                <p class="sub-head">Snackbar</p>
+                <div class="row row-cols-2">
+                    <div class="col message"><img src="./images/error-icon.png" class="icon"><span>This is an error Message</span></div>
+                    <div class="col message"><img src="./images/info-icon.png" class="icon"><span>This is an information Message!</span></div>
+                    <div class="col message"><img src="./images/warning-icon.png" class="icon"><span>This is an Warning Message</span></div>
+                    <div class="col message"><img src="./images/success-icon.png" class="icon"><span>This is an Success Message!</span></div>
+                </div>
+
+                <p class="sub-head">Call to action</p>
+                <div class="button">
+                    <button type="button" class="btn btn-danger me-3 px-3 fs-4" style="border-radius: 23px;">Primary</button>
+                    <button type="button" class="btn btn-outline-danger px-3 fs-4" style="border-radius: 23px;">Secondry</button>
+                </div>
+
+                <p class="sub-head">Tabs</p>
+                <div class="d-flex py-2 tab" style="border-bottom: 1px solid #ADADAD;">
+                    <div class="me-3 "><span class="activetab">Tab 1</span></div>
+                    <div class="me-3"><span>Tab 2</span></div>
+                    <div class="me-3"><span>Tab 3</span></div>
+                </div>
+                
+                <p class="mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -4,7 +4,7 @@
     
 }
 body{
-    background-color:gainsboro;
+    background-color:white;
 }
 .header1 img {
     width: 10cm;
@@ -12,8 +12,6 @@ body{
     border-radius: 50%;
 
 }
-
-
 .zero {
     padding-left: 22%;
     padding-top: 13%;
@@ -29,7 +27,6 @@ body{
 .first p{
     font-size: xx-large;
     margin: 4px 3px;
-
 }
 .first input{
     width: 7cm;
@@ -44,7 +41,6 @@ body{
     border-color: red;
     text-align: center;
     display: inline-block;
-    
 }
 .first a{
     color: grey;
@@ -55,121 +51,138 @@ body{
 .word{
     color: red;
 }
-
-
 .second a{
     text-decoration: none;
     padding: 0px 0px;
-    
 }
 .second p{
      font-size:smaller ;
     color: grey;
 }
 
-/*dashboard header*/
+/*dashboard*/
 
-.part12{
-    height: 0.8cm;
-    width: 2.5cm;
-    padding-left: 0.4cm;
-    padding-top: 2mm;
-}
-.header .search-box {
-    display: flex;
-    align-items: center;
-    background: #fafafa;
-    height: 30px;
-    padding-left: 10px;
-    border-radius: 5px;
-    padding-right: 20cm;
-    
-}
-
-.header .search-box .search-icon {
-    display: flex;
-    margin-right: 15px;
-}
-
-.search-box input {
-    border: 1px solid #fafafa;
-    background: #fafafa;
-}
-
-.search-box input:focus {
-    outline: none;
-}
-
-.right-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 20%;
-
-}
-
-.right-header .profile-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 60%;
-}
-
-.profile-box .profile-image {
-    width: 44px;
-    aspect-ratio: 1;
-}
-
-.profile-box .down-arrow-icon {
-    display: flex;
-}
-
-.profile-box .down-arrow-icon img {
+.icon {
     width: 18px;
+    height: 18px;
 }
-
-/*navbar sidebar*/
-
-nav {
-    background: #fff;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0 30px;
-    list-style: none;
-}
-
-nav ul li {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    font-size: 16px;
-    line-height: 21px;
-}
-
-.list-group-item {
+.items {
+    text-align: left;
+    font: normal normal normal 16px/21px roboto;
+    letter-spacing: 0px;
+    color: #3e3e3e;
     border: none;
-    list-style: none;
+    margin-bottom: 1rem;
 }
-
-.nav-icon-box {
-    display: flex;
-    align-items: center;
-    padding: 10px 40px 10px 20px;
+.activelink {
+    background: #fff3f4 0% 0% no-repeat padding-box;
     border-radius: 5px;
-}
+    color: #c8242f;
 
-.nav-icon-box .icon {
-    margin-right: 10px;
 }
-
-.nav-icon-box p {
+.d-name {
+    font-size: 30px;
+    line-height: 39px;
+    color: #000000;
+    font-weight: 700;
+    font-family: Roboto;
+}
+.product {
+    width: 42px;
+    height: 42px;
+    height: 100%;
     margin: 0;
 }
-
-.icon-box-active {
-    background: #fff3f4;
+.numbers {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    font-weight: 650;
+}
+.table-heading {
+    color: #adadad;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 1.5px;
+    font-weight: normal;
+    font-family: Roboto;
+}
+.table td {
+    padding: 12px 8px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #3e3e3e;
+}
+.b-head {
+    font-size: 22px;
+    line-height: 29px;
+    color: #3e3e3e;
+    font-family: Roboto;
+}
+.red {
     color: #c8242f;
-    
+    font-size: 12px;
+    line-height: 16px;
+}
+.dot {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #c8242f;
+    display: inline-block;
+    margin-right: 9px;
+    vertical-align: middle;
+}
+.country {
+    font-size: 15px;
+    line-height: 20px;
+}
+.paid {
+     color: #3cdd5f;
+     background-color: #EBFFEF;
+     font-size: 15px;
+}
+.failed {
+        color: #FF4545;
+        background-color: #FFF5F5;
+        font-size: 15px;
+} 
+.pending {
+        color: #BABABA;
+        background-color: #F8F8F8;
+        font-size: 15px;
+}
+
+/* innerpage */
+
+.form-head {
+    font-size: 22px;
+    line-height: 29px;
+    color: #3E3e3e;
+}
+.sub-head {
+    font-size: 18px;
+    line-height: 24px;
+    color: #3e3e3e;
+    margin: 21px 0 15px 0;
+}
+.message {
+    border: 1px solid #ff3535;
+    border-radius: 5px;
+    color: #ff3535;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.message:nth-child(2) {
+    border-color: bluue;
+}
+.tab {
+    color: #adadad;
+    font-size: 15px;
+    font-weight: 550;
+}
+.activetab {
+    color: #c8242f;
+    border-bottom: 3px solid #c8242f;
+    padding: 8px 16px;
 }
