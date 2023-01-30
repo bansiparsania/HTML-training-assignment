@@ -14,7 +14,7 @@
         <div class="row  mt-4 mx-3" style="background-color: #ffffff;">
             <div class="col-3 text-start">
                 <img src="./images/menu-bar.png" class="me-4">
-                <img src="./images/header-logo.png" class="me-4">
+                <img src="./images/header-logo.png" class="me-4" style="width: 3cm;">
             </div>
             <div class="col-3 text-start">
                 <img src="./images/search-icon.png" class="icon">
@@ -31,7 +31,7 @@
         <div class="dashboard row ">
             <div class="col-2" style="background-color: #ffffff;">
                 <div class="list-group list-group-flush ms-3 mt-4">
-                    <a href="index.html" class="list-group-item items activelink"><img src="./images/dashboard-active.png" class="icon ms-2 me-2">Dashboard</a>
+                    <a href="index.html" class="list-group-item items activelink"><img src="./images/dashboard-active.png" class="icon me-2">Dashboard</a>
 
                     <a href="#" class="list-group-item items"><img src="./images/graph-default.png" class="icon me-2">Analysis</a>
 
@@ -46,60 +46,60 @@
                     <a href="#" class="list-group-item items"><img src="./images/setting-default.png" class="icon me-2">Setting</a>
                 </div>
             </div>
-            <div class="col-10 ps-5 pe-0 pt-4">
+            <div class="col-10 ps-5 pe-0 pt-4" style="background-color: #e2dddd; padding-bottom: 10mm;">
 
                 <p class="d-name">Dashboard</p>
 
-                <div class="d-flex flex-row ">
+                <div class="d-flex flex-row content" style="display: flex;">
                     <div class="p-4 d-flex me-4 justify-content-between" style="background-color: #ffffff;">
-                        <div class="pe-3 mb-3">
+                        <div class="pe-3 mb-3 image">
                             <img src="./images/star.png" class="product">
                         </div>
                         <div>
                             <p class="numbers">23,456</p>
-                            <p>New Products</p>
+                            <p style="font-size:medium;">New Products</p>
                         </div>
                     </div>
                     <div class="p-4 d-flex me-4 justify-content-between" style="background-color: #ffffff;">
-                        <div class="pe-3 mb-3">
+                        <div class="pe-3 mb-3 image">
                             <img src="./images/new-product.png" class="product">
                         </div>
                         <div>
                             <p class="numbers">2345</p>
-                            <p>Added Products</p>
+                            <p style="font-size:medium;">Added Products</p>
                         </div>
                     </div>
                     <div class="p-4 d-flex me-4 justify-content-between" style="background-color: #ffffff;">
-                        <div class="pe-3 mb-3">
+                        <div class="pe-3 mb-3 image">
                             <img src="./images/total-product.png" class="product">
                         </div>
                         <div>
                             <p class="numbers">32,456</p>
-                            <p>Total Products</p>
+                            <p style="font-size:medium;">Total Products</p>
                         </div>
                     </div>
                     <div class="p-4 d-flex me-4 justify-content-between" style="background-color: #ffffff;">
-                        <div class="pe-3 mb-3">
+                        <div class="pe-3 mb-3 image">
                             <img src="./images/dollar-filled.png" class="product">
                         </div>
                         <div>
                             <p class="numbers">5678</p>
-                            <p>Today's Sale</p>
+                            <p style="font-size:medium;">Today's Sale</p>
                         </div>
                     </div>
                     <div class="p-4 d-flex me-4 justify-content-between" style="background-color: #ffffff;">
-                        <div class="pe-3 mb-3">
+                        <div class="pe-3 mb-3 image">
                             <img src="./images/star.png" class="product">
                         </div>
                         <div>
                             <p class="numbers">33,5342</p>
-                            <p>Total Sale</p>
+                            <p style="font-size:medium;">Total Sale</p>
                         </div>
                     </div>
                 </div>
-
-                <div class="row mt-3">
-                    <div class="col-8 p-3">
+                <br>
+                <div class="row mt-3" style="background-color: white;">
+                    <div class="col-8 p-3 graph">
                         <div class="d-flex justify-content-between">
                             <h4 class="b-head">Sales</h4>
                             <div style="color: #adadad;" class="me-5">
@@ -112,14 +112,14 @@
                         <h4 class="b-head">Sales by Country</h4>
                         <img src="./images/pie-chart.png" class="ps-5">
                         <div class="country row">
-                            <p class="col-7"><span class="dot"></span>United States Of America </p>
-                            <p class="col-5"><span class="dot"></span>Canada</p>
-                            <p class="col-7"><span class="dot"></span>Russia</p>
-                            <p class="col-5"><span class="dot"></span>India</p>
+                            <p class="col-7"><span class="dot" style="background-color: rgb(227, 30, 30);"></span>United States Of America </p>
+                            <p class="col-5"><span class="dot" style="background-color: rgb(104, 156, 64);"></span>Canada</p>
+                            <p class="col-7"><span class="dot" style="background-color: rgb(228, 86, 34);"></span>Russia</p>
+                            <p class="col-5"><span class="dot" style="background-color: rgb(212, 196, 17);"></span>India</p>
                         </div>
                     </div>
                 </div>
-
+                <br>
                 <div style="background-color: #ffffff; border-radius: 5px;" class="p-5">
                     <div class="d-flex justify-content-between mb-2">
                         <h4 class="b-head">Invoices</h4>
@@ -212,8 +212,10 @@
                             </tr>
                         </tbody>
                     </table>
+                    
                 </div>
             </div>
+            
         </div>
     </div>
 </body>

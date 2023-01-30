@@ -13,7 +13,7 @@ body{
 
 }
 .zero {
-    padding-left: 22%;
+    padding-left: 20%;
     padding-top: 13%;
 }
 .first{
@@ -60,11 +60,38 @@ body{
     color: grey;
 }
 
+@media screen and (max-width:1375px){
+    .first{
+        padding-top: 13%;
+    }
+}
+@media screen and (max-width:605px) {
+    .first{
+        padding-top: 100%;
+        
+    }
+}
+    
+
+
 /*dashboard*/
 
 .icon {
     width: 18px;
     height: 18px;
+}
+.text-start{
+    padding-right: 10px;
+}
+.image {
+    height: 1cm;
+    width: 1cm;
+}
+.content{
+    display: inline-flex;
+    padding-left: 1cm;
+    padding-right: 1cm;
+    justify-content: space-between;
 }
 .items {
     text-align: left;
@@ -78,7 +105,9 @@ body{
     background: #fff3f4 0% 0% no-repeat padding-box;
     border-radius: 5px;
     color: #c8242f;
-
+}
+.activelink img {
+    color: red;
 }
 .d-name {
     font-size: 30px;
@@ -88,13 +117,13 @@ body{
     font-family: Roboto;
 }
 .product {
-    width: 42px;
-    height: 42px;
+    width: 35px;
+    height: 25px;
     height: 100%;
     margin: 0;
 }
 .numbers {
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
     padding: 0;
     font-weight: 650;
@@ -128,7 +157,7 @@ body{
     height: 18px;
     width: 18px;
     border-radius: 50%;
-    background-color: #c8242f;
+    
     display: inline-block;
     margin-right: 9px;
     vertical-align: middle;
@@ -139,18 +168,21 @@ body{
 }
 .paid {
      color: #3cdd5f;
-     background-color: #EBFFEF;
+     background-color: #ddf6e2;
      font-size: 15px;
+     padding: 3px 2px;
 }
 .failed {
         color: #FF4545;
-        background-color: #FFF5F5;
+        background-color: #eee5e5;
         font-size: 15px;
+        padding: 3px 2px;
 } 
 .pending {
-        color: #BABABA;
-        background-color: #F8F8F8;
+        color: #908f8f;
+        background-color: #eae9e9;
         font-size: 15px;
+        padding: 3px 2px;
 }
 
 /* innerpage */
@@ -159,22 +191,32 @@ body{
     font-size: 22px;
     line-height: 29px;
     color: #3E3e3e;
+    font-weight: bold;
 }
 .sub-head {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 24px;
     color: #3e3e3e;
     margin: 21px 0 15px 0;
+    font-weight: bold;
+}
+
+.form-group input {
+    border: 2px red;
 }
 .message {
-    border: 1px solid #ff3535;
+    border: 2px solid;
     border-radius: 5px;
-    color: #ff3535;
     padding: 10px;
     margin-bottom: 5px;
+    margin-right: 30px;
+    width: 15cm;
+    
 }
-.message:nth-child(2) {
-    border-color: bluue;
+.btn {
+    width: 3cm;
+    height: 1cm;
+    margin-right: 8px;
 }
 .tab {
     color: #adadad;

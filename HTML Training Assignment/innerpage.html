@@ -15,10 +15,10 @@
         <div class="row  mt-4 mx-3" style="background-color: #ffffff;">
             <div class="col-3 text-start">
                 <img src="./images/menu-bar.png" class="me-4">
-                <img src="./images/header-logo.png" class="me-4">
+                <img src="./images/header-logo.png" class="me-4" style="width: 3cm;">
             </div>
-            <div class="col-3 text-start">
-                <img src="./images/search-icon.png" class="icon mx-2 ">
+            <div class="col-2 text-start">
+                <img src="./images/search-icon.png" class="icon">
                 <span class="items">Search</span>
             </div>
             <div class="col-6 text-end">
@@ -48,16 +48,17 @@
                 </div>
             </div>
             <div class="col-10 p-4">
-                <h4 class="d-name">Analysis</h4>
+                <h3 class="d-name">Analysis</h3>
+                <br>
                 <form class="form p-2">
                     <p class="form-head">One Column</p>
                     <input class="form-control mb-3" type="text" placeholder="Name">
-                    <select class="form-control mb-3">
+                    <select class="form-control mb-3" style="color: #757171;">
                         <option>Dropdown</option>
+                        <option>1</option>
                         <option>2</option>
                         <option>3</option>
                         <option>4</option>
-                        <option>5</option>
                     </select>
                     <textarea class="form-control mb-3" type="text" rows="4" placeholder="Multiple line"></textarea>
                 </form>
@@ -72,10 +73,10 @@
                         <div class="col mb-3"><input class="form-control col-6" type="text" placeholder="Password"></div>
 
                         <div class="col">
-                            <select class="form-control col-6">
+                            <select class="form-control col-6" style="color: #757171;">
                                 <option class="form-control">Dropdown</option>
+                                <option>1</option>
                                 <option>2</option>
-                                <option>3</option>
                             </select>
                         </div>
                     </div>
@@ -89,50 +90,69 @@
 
                         <div class="col mb-3"><input class="form-control col-6" type="password" placeholder="Password"></div>
 
-                        <div class="col mb-3"><input class="form-control col-6 disabled" type="text" placeholder="Dissabled"></div>
+                        <div class="col mb-3"><input class="form-control col-6 disabled" type="text" placeholder="Dissabled" disabled="trues"></div>
                     </div>
                 </form>
 
+                <form class="form mt-4 p-2">
+                    <p class="form-head">Four Column</p>
+                    <div class="row row-cols-4">
+                        <div class="col mb-3"><input class="form-control col-6" type="text" placeholder="Designation"></div>
+
+                        <div class="col mb-3"><input class="form-control col-6" type="text" placeholder="Name"></div>
+
+                        <div class="col mb-3"><input class="form-control col-6" type="text" placeholder="Username"></div>
+
+                        <div class="col">
+                            <select class="form-control col-6" style="color: #757171;">
+                                <option class="form-control">Select</option>
+                                <option>1</option>
+                                <option>2</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+                 <br>
                 <p class="form-head">Other Design Eslements</p>
                 <div>
                     <p class="sub-head">File Upload</p>
                     <div class="form-group">
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        <input type="file" name="filename">
                     </div>
                 </div>
 
                 <p class="sub-head">Radio Button</p>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                    <label class="form-check-label" for="exampleRadios1">option 1</label>
+                    <input class="form-check-input red" type="radio" name="exampleRadios" id="Radios1" value="option1" style="color: red;">
+                    <label class="form-check-label" for="Radios1">option 1</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                    <label class="form-check-label" for="exampleRadios2">option 2</label>
+                    <input class="form-check-input red" type="radio" name="exampleRadios" id="Radios2" value="option2" style="background-color: red;" checked>
+                    <label class="form-check-label" for="Radios2">option 2</label>
                 </div>
-
+               <br>
                 <p class="sub-head">Checkbox</p>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">Option 1</label>
+                    <input class="form-check-input" type="checkbox" id="Checkbox1" value="option1" style="color: red;">
+                    <label class="form-check-label" for="Checkbox1">Option 1</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label class="form-check-label" for="inlineCheckbox2">Option 2</label>
+                    <input class="form-check-input" type="checkbox" id="Checkbox2" value="option2" style="background-color: red;" checked>
+                    <label class="form-check-label" for="Checkbox2">Option 2</label>
                 </div>
-
+                 <br>
                 <p class="sub-head">Snackbar</p>
                 <div class="row row-cols-2">
-                    <div class="col message"><img src="./images/error-icon.png" class="icon"><span>This is an error Message</span></div>
-                    <div class="col message"><img src="./images/info-icon.png" class="icon"><span>This is an information Message!</span></div>
-                    <div class="col message"><img src="./images/warning-icon.png" class="icon"><span>This is an Warning Message</span></div>
-                    <div class="col message"><img src="./images/success-icon.png" class="icon"><span>This is an Success Message!</span></div>
+                    <div class="col message mb-3" style="border-color: red;"><img src="./images/error-icon.png" class="icon"><span style="color: red;">This is an error Message</span></div>
+                    <div class="col message mb-3" style="border-color: rgb(48, 194, 243);"><img src="./images/info-icon.png" class="icon"><span style="color: rgb(48, 194, 243);">This is an information Message!</span></div>
+                    <div class="col message mb-3" style="border-color:rgb(223, 198, 52) ;"><img src="./images/warning-icon.png" class="icon"><span style="color: rgb(223, 198, 52);">This is an Warning Message</span></div>
+                    <div class="col message mb-3" style="border-color: rgb(13, 162, 13);"><img src="./images/success-icon.png" class="icon"><span style="color: rgb(13, 162, 13);">This is an Success Message!</span></div>
                 </div>
 
                 <p class="sub-head">Call to action</p>
                 <div class="button">
-                    <button type="button" class="btn btn-danger me-3 px-3 fs-4" style="border-radius: 23px;">Primary</button>
-                    <button type="button" class="btn btn-outline-danger px-3 fs-4" style="border-radius: 23px;">Secondry</button>
+                    <button type="button" class="btn btn-danger" style="border-radius: 23px;">Primary</button>
+                    <button type="button" class="btn btn-outline-danger" style="border-radius: 23px;">Secondry</button>
                 </div>
 
                 <p class="sub-head">Tabs</p>
