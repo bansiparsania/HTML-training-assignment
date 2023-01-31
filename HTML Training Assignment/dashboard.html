@@ -1,263 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard page</title>
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="javascript" href="./js/custom.js">
-    <link rel="stylesheet" media="(max-width:450px)" href="smartphone.css">
-</head>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="javascript" href="./js/custom.js" />
+    <link rel="stylesheet" media="(max-width:450px)" href="smartphone.css" />
+  </head>
 
-<body>
-    <div class="container-fluid p-0" style="background-color: #fafafa;">
-        <div class="row  mt-4 mx-3" style="background-color: #ffffff;">
-            <div class="col-3 text-start">
-                <button class="btn" type="button"data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
-                <img src="images/menu-bar.png" alt=""></button>
-                        
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasTop"   aria-labelledby="offcanvasTopLabel">
-                
+  <body>
+    <div class="container-fluid p-0" style="background-color: #fafafa">
+      <div class="row mt-4 mx-3" style="background-color: #ffffff">
+        <div class="col-3 text-start">
+          <button
+            class="btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasTop"
+            aria-controls="offcanvasTop"
+          >
+            <img src="images/menu-bar.png" alt="" />
+          </button>
+
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasTop"
+            aria-labelledby="offcanvasTopLabel"
+          >
             <div class="offcanvas-header">
-                                
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </div>
-                            
+
             <div class="offcanvas-body">
+              <a
+                href="dashboard.html"
+                class="btn d-flex justify-content-start"
+                style="width: 183px; height: 43px"
+                role="button"
+              >
+                <img
+                  class="dashImages"
+                  src="images/dashboard-active.png"
+                  style="width: 8mm; height: 8mm"
+                  alt="Dashboard"
+                />
+                <p>&nbsp;&nbsp;Dashboard</p></a
+              >
 
-            <a href="dashboard.html" class="btn d-flex justify-content-start" style="width: 183px;height: 43px;" role="button">
-            <img class="dashImages" src="images/dashboard-active.png" style="width: 8mm; height: 8mm;" alt="Dashboard"> <p>&nbsp;&nbsp;Dashboard</p></a>
-            
-            <a href="innerpage.html" class="btn d-flex justify-content-start" style="width: 183px;height: 43px;" role="button">
-            <img class="dashImages" src="images/graph-default.png" style="width: 8mm; height: 8mm;" alt="Analysis"> &nbsp;&nbsp;Analysis</a>
-            
-            <a href="#" class="btn d-flex justify-content-start" style="width: 183px;height: 43px;" role="button">
-            <img class="dashImages" src="images/inbox-default.png" style="width: 8mm; height: 8mm;" alt="Inbox">  &nbsp;&nbsp;Inbox</a>
-                
-            <a href="#" class="btn d-flex justify-content-start" style="width: 183px;height: 43px;" role="button">
-            <img class="dashImages" src="images/clock-default.png" style="width: 8mm; height: 8mm;" alt="History">  &nbsp;&nbsp;History</a>
-                        
-            <a href="#" class="btn d-flex justify-content-start" style="width: 183px;height: 43px;" role="button">
-            <img class="dashImages" src="images/user-default.png" style="width: 8mm; height: 8mm;" alt="Users">  &nbsp;&nbsp;Users</a>
-                                
-            <a href="#" class="btn d-flex justify-content-start" style="width: 183px;height: 43px;" role="button">
-            <img class="dashImages" src="images/maintenance-default.png" style="width: 8mm; height: 8mm;" alt="Maintenance">  &nbsp;&nbsp;Maintenance</a>
-                                
-            <a href="#" class="btn d-flex justify-content-start" style="width: 183px;height: 43px;" role="button">
-            <img class="dashImages" src="images/setting-default.png" style="width: 8mm; height: 8mm;" alt="Setting">&nbsp;&nbsp; Setting</a>
+              <a
+                href="innerpage.html"
+                class="btn d-flex justify-content-start"
+                style="width: 183px; height: 43px"
+                role="button"
+              >
+                <img
+                  class="dashImages"
+                  src="images/graph-default.png"
+                  style="width: 8mm; height: 8mm"
+                  alt="Analysis"
+                />
+                &nbsp;&nbsp;Analysis</a
+              >
+
+              <a
+                href="#"
+                class="btn d-flex justify-content-start"
+                style="width: 183px; height: 43px"
+                role="button"
+              >
+                <img
+                  class="dashImages"
+                  src="images/inbox-default.png"
+                  style="width: 8mm; height: 8mm"
+                  alt="Inbox"
+                />
+                &nbsp;&nbsp;Inbox</a
+              >
+
+              <a
+                href="#"
+                class="btn d-flex justify-content-start"
+                style="width: 183px; height: 43px"
+                role="button"
+              >
+                <img
+                  class="dashImages"
+                  src="images/clock-default.png"
+                  style="width: 8mm; height: 8mm"
+                  alt="History"
+                />
+                &nbsp;&nbsp;History</a
+              >
+
+              <a
+                href="#"
+                class="btn d-flex justify-content-start"
+                style="width: 183px; height: 43px"
+                role="button"
+              >
+                <img
+                  class="dashImages"
+                  src="images/user-default.png"
+                  style="width: 8mm; height: 8mm"
+                  alt="Users"
+                />
+                &nbsp;&nbsp;Users</a
+              >
+
+              <a
+                href="#"
+                class="btn d-flex justify-content-start"
+                style="width: 183px; height: 43px"
+                role="button"
+              >
+                <img
+                  class="dashImages"
+                  src="images/maintenance-default.png"
+                  style="width: 8mm; height: 8mm"
+                  alt="Maintenance"
+                />
+                &nbsp;&nbsp;Maintenance</a
+              >
+
+              <a
+                href="#"
+                class="btn d-flex justify-content-start"
+                style="width: 183px; height: 43px"
+                role="button"
+              >
+                <img
+                  class="dashImages"
+                  src="images/setting-default.png"
+                  style="width: 8mm; height: 8mm"
+                  alt="Setting"
+                />&nbsp;&nbsp; Setting</a
+              >
+            </div>
+          </div>
+          <img src="./images/header-logo.png" class="me-4" style="width: 3cm" />
         </div>
+        <div class="col-3 text-start s">
+          <img src="./images/search-icon.png" class="icon" />
+          <span class="items">Search</span>
+        </div>
+        <div class="col-6 text-end">
+          <img src="./images/notification-icon.png" class="icon" />
+          <img src="./images/profile.png" class="fs-2 me-1 ms-5" />
+          <span class="name mx-2">John Doe</span>
+          <img src="./images/downward-arrow.png" class="icon" />
+        </div>
+      </div>
+
+      <div class="dashboard row">
+        <div class="col-2 sidebar" style="background-color: #ffffff">
+          <div class="list-group list-group-flush ms-3 mt-4">
+            <a href="dashboard.html" class="list-group-item items activelink"
+              ><img
+                src="./images/dashboard-active.png"
+                class="icon me-2"
+              />Dashboard</a
+            >
+
+            <a href="innerpage.html" class="list-group-item items"
+              ><img
+                src="./images/graph-default.png"
+                class="icon me-2"
+              />Analysis</a
+            >
+
+            <a href="#" class="list-group-item items"
+              ><img
+                src="./images/inbox-default.png"
+                class="icon me-2"
+              />Inbox</a
+            >
+
+            <a href="#" class="list-group-item items"
+              ><img
+                src="./images/clock-default.png"
+                class="icon me-2"
+              />History</a
+            >
+
+            <a href="#" class="list-group-item items"
+              ><img src="./images/user-default.png" class="icon me-2" />Users</a
+            >
+
+            <a href="#" class="list-group-item items"
+              ><img
+                src="./images/maintenance-default.png"
+                class="icon me-1"
+              />Maintainence</a
+            >
+
+            <a href="#" class="list-group-item items"
+              ><img
+                src="./images/setting-default.png"
+                class="icon me-2"
+              />Setting</a
+            >
+          </div>
+        </div>
+        <div
+          class="col-10 ps-5 pe-0 pt-4 main"
+          style="background-color: #ecebeb; padding-bottom: 10mm"
+        >
+          <p class="d-name">Dashboard</p>
+          <div class="container-fluid m-0 p-0">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-5 p-2 g-3">
+
+              <div class="col" >
+                <div class="d-flex flex-row p-3" style="background-color: #ffffff">
+                  <div class="pe-3 mb-3 image">
+                    <img src="./images/star.png" class="product" />
+                  </div>
+                  <div>
+                    <p class="numbers">23,456</p>
+                    <p style="font-size: medium">New Products</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col" >
+                <div class="d-flex flex-row p-3" style="background-color: #ffffff">
+                  <div class="pe-3 mb-3 image">
+                    <img src="./images/new-product.png" class="product" />
+                  </div>
+                  <div>
+                    <p class="numbers">2345</p>
+                    <p style="font-size: medium">Added Products</p>
+                  </div>
+                </div>
+              </div>
+
+<div class="col" >
+                <div class="d-flex flex-row p-3" style="background-color: #ffffff">
+                  <div class="pe-3 mb-3 image">
+                    <img src="./images/total-product.png" class="product" />
+                  </div>
+                  <div>
+                    <p class="numbers">32,456</p>
+                    <p style="font-size: medium">Total Products</p>
+                  </div>
+                </div>
+              </div>
+
+              
+
+<div class="col" >
+                <div class="d-flex flex-row p-3" style="background-color: #ffffff">
+                  <div class="pe-3 mb-3 image">
+                    <img src="./images/dollar-filled.png" class="product" />
+                  </div>
+                  <div>
+                    <p class="numbers">5678</p>
+                    <p style="font-size: medium">Today's Sale</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col" >
+                <div class="d-flex flex-row p-3" style="background-color: #ffffff">
+                  <div class="pe-3 mb-3 image">
+                    <img src="./images/money-bag.png" class="product" />
+                  </div>
+                  <div>
+                    <p class="numbers">33,5342</p>
+                    <p style="font-size: medium">Total Sale</p>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+            
+          </div>
+          <br />
+          <div class="row mt-3 middle" style="background-color: #ecebeb">
+            <div class="col-8 p-2 graph" style="background-color: white">
+              <div class="d-flex justify-content-between">
+                <h4 class="b-head" style="font-family: sans-serif">Sale</h4>
+                <div style="color: #adadad">
+                  <span class="p-1">Weekly</span>
+                  <span class="p-1">Monthly</span>
+                  <span
+                    class="m-2 pb-2"
+                    style="color: #c8242f; border-bottom: 1px solid #c8242f"
+                    >Yearly</span
+                  >
+                </div>
+              </div>
+              <img
+                src="./images/data-graph.png"
+                style="width: 100%"
+                class="img-flluid"
+              />
+            </div>
+
+            <div
+              class="col-4 p-2 chart"
+              style="background-color: rgb(255, 255, 255)"
+            >
+              <h4 class="b-head" style="font-family: sans-serif">
+                Sales by Country
+              </h4>
+              <img
+                src="./images/pie-chart.png"
+                class="ps-5"
+                style="width: 100%"
+              />
+              <div class="country row">
+                <p class="col-7">
+                  <span
+                    class="dot"
+                    style="background-color: rgb(227, 30, 30)"
+                  ></span
+                  >United States Of America
+                </p>
+                <p class="col-5">
+                  <span
+                    class="dot"
+                    style="background-color: rgb(104, 156, 64)"
+                  ></span
+                  >Canada
+                </p>
+                <p class="col-7">
+                  <span
+                    class="dot"
+                    style="background-color: rgb(228, 86, 34)"
+                  ></span
+                  >Russia
+                </p>
+                <p class="col-5">
+                  <span
+                    class="dot"
+                    style="background-color: rgb(212, 196, 17)"
+                  ></span
+                  >India
+                </p>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div
+            style="
+              background-color: #ffffff;
+              border-radius: 5px;
+              overflow-x: auto;
+            "
+            class="p-3 end"
+          >
+            <div class="d-flex justify-content-between mb-2">
+              <h4 class="b-head" style="font-family: sans-serif">Invoices</h4>
+              <h4 class="red">View All</h4>
+            </div>
+
+            <table class="table" style="width: 100%">
+              <thead class="table-heading">
+                <tr>
+                  <th>INVOICE</th>
+                  <th>COMPANY NAME</th>
+                  <th>EMAIL</th>
+                  <th>DUE DATE</th>
+                  <th>STATUS</th>
+                  <th>AMOUNT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>651535</td>
+                  <td>Public Adjusting Firm</td>
+                  <td>georgia.young@example.com</td>
+                  <td>24 May,2020</td>
+                  <td><span class="paid">Paid</span></td>
+                  <td>$47,800</td>
+                </tr>
+                <tr>
+                  <td>558612</td>
+                  <td>Other</td>
+                  <td>jessica.young@example.com</td>
+                  <td>24 May,2020</td>
+                  <td><span class="paid">Paid</span></td>
+                  <td>$98,800</td>
+                </tr>
+                <tr>
+                  <td>558612</td>
+                  <td>Vendor</td>
+                  <td>alma.lawson@example.com</td>
+                  <td>8 Sep,2020</td>
+                  <td><span class="paid">Paid</span></td>
+                  <td>$20,900</td>
+                </tr>
+                <tr>
+                  <td>558612</td>
+                  <td>Vendor</td>
+                  <td>alma.lawson@example.com</td>
+                  <td>8 Sep,2020</td>
+                  <td><span class="paid">Paid</span></td>
+                  <td>$20,900</td>
+                </tr>
+                <tr>
+                  <td>558612</td>
+                  <td>Vendor</td>
+                  <td>alma.lawson@example.com</td>
+                  <td>8 Sep,2020</td>
+                  <td><span class="failed">Failed</span></td>
+                  <td>$10,200</td>
+                </tr>
+                <tr>
+                  <td>558612</td>
+                  <td>Vendor</td>
+                  <td>alma.lawson@example.com</td>
+                  <td>8 Sep,2020</td>
+                  <td><span class="pending">Pending</span></td>
+                  <td>$12,600</td>
+                </tr>
+                <tr>
+                  <td>558612</td>
+                  <td>Vendor</td>
+                  <td>alma.lawson@example.com</td>
+                  <td>8 Sep,2020</td>
+                  <td><span class="paid">Paid</span></td>
+                  <td>$11,170</td>
+                </tr>
+                <tr>
+                  <td>558612</td>
+                  <td>Vendor</td>
+                  <td>alma.lawson@example.com</td>
+                  <td>8 Sep,2020</td>
+                  <td><span class="failed">Failed</span></td>
+                  <td>$28,000</td>
+                </tr>
+                <tr>
+                  <td>44903</td>
+                  <td>Insurance Carrier</td>
+                  <td>curtis.weaver@example.com</td>
+                  <td>21 Sep,2020</td>
+                  <td><span class="paid">Paid</span></td>
+                  <td>$10,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
-                <img src="./images/header-logo.png" class="me-4" style="width: 3cm;">
-            </div>
-            <div class="col-3 text-start s">
-                <img src="./images/search-icon.png" class="icon">
-                <span class="items">Search</span>
-            </div>
-            <div class="col-6 text-end">
-                <img src="./images/notification-icon.png" class="icon">
-                <img src="./images/profile.png" class="fs-2 me-1 ms-5">
-                <span class="name mx-2">John Doe</span>
-                <img src="./images/downward-arrow.png" class="icon">
-            </div>
-        </div>
 
-        <div class="dashboard row ">
-            <div class="col-2 sidebar" style="background-color: #ffffff;">
-                <div class="list-group list-group-flush ms-3 mt-4">
-                    <a href="dashboard.html" class="list-group-item items activelink"><img src="./images/dashboard-active.png" class="icon me-2">Dashboard</a>
-
-                    <a href="innerpage.html" class="list-group-item items"><img src="./images/graph-default.png" class="icon me-2">Analysis</a>
-
-                    <a href="#" class="list-group-item items"><img src="./images/inbox-default.png" class="icon me-2">Inbox</a>
-
-                    <a href="#" class="list-group-item items"><img src="./images/clock-default.png" class="icon me-2">History</a>
-
-                    <a href="#" class="list-group-item items"><img src="./images/user-default.png" class="icon me-2">Users</a>
-
-                    <a href="#" class="list-group-item items"><img src="./images/maintenance-default.png" class="icon me-1">Maintainence</a>
-
-                    <a href="#" class="list-group-item items"><img src="./images/setting-default.png" class="icon me-2">Setting</a>
-                </div>
-            </div>
-            <div class="col-10 ps-5 pe-0 pt-4" style="background-color: #ecebeb; padding-bottom: 10mm;">
-
-            <p class="d-name">Dashboard</p>
-
-                <div class="d-flex flex-row content" style="display: flex;">
-                    <div class="p-4 d-flex me-4 justify-content-between" style="background-color: #ffffff; ">
-                        <div class="pe-3 mb-3 image">
-                            <img src="./images/star.png" class="product">
-                        </div>
-                        
-                        <div>
-                            <p class="numbers">23,456</p>
-                            <p style="font-size:medium;">New Products</p>
-                        </div>
-                    </div>
-                    <div class="p-4 d-flex me-4 justify-content-between" style="background-color: #ffffff;">
-                        <div class="pe-3 mb-3 image">
-                            <img src="./images/new-product.png" class="product">
-                        </div>
-                        <div>
-                            <p class="numbers">2345</p>
-                            <p style="font-size:medium;">Added Products</p>
-                        </div>
-                    </div>
-                    <div class="p-4 d-flex me-4 justify-content-between" style="background-color: #ffffff;">
-                        <div class="pe-3 mb-3 image">
-                            <img src="./images/total-product.png" class="product">
-                        </div>
-                        <div>
-                            <p class="numbers">32,456</p>
-                            <p style="font-size:medium;">Total Products</p>
-                        </div>
-                    </div>
-                    <div class="p-4 d-flex me-4 justify-content-between" style="background-color: #ffffff;">
-                        <div class="pe-3 mb-3 image">
-                            <img src="./images/dollar-filled.png" class="product">
-                        </div>
-                        <div>
-                            <p class="numbers">5678</p>
-                            <p style="font-size:medium;">Today's Sale</p>
-                        </div>
-                    </div>
-                    <div class="p-4 d-flex me-4 justify-content-between" style="background-color: #ffffff;">
-                        <div class="pe-3 mb-3 image">
-                            <img src="./images/money-bag.png" class="product">
-                        </div>
-                        <div>
-                            <p class="numbers">33,5342</p>
-                            <p style="font-size:medium;">Total Sale</p>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="row mt-3 middle" style="background-color:#ecebeb ;">
-                    <div class="col-8 p-2 graph" style="background-color: white;">
-                        <div class="d-flex justify-content-between">
-                            <h4 class="b-head" style="font-family: sans-serif;">Sale</h4>
-                            <div style="color: #adadad;">
-                                <span class="p-1">Weekly</span> <span class="p-1">Monthly</span> <span class="m-2 pb-2" style="color: #c8242f; border-bottom:1px solid #c8242f;">Yearly</span>
-                            </div>
-                        </div>
-                        <img src="./images/data-graph.png" style="width: 100%;" class="img-flluid">
-                    </div>
-                    
-                   
-                    <div class="col-4 p-2 chart" style="background-color: rgb(255, 255, 255);  ">
-                        <h4 class="b-head" style="font-family: sans-serif;">Sales by Country</h4>
-                        <img src="./images/pie-chart.png" class="ps-5" style="width: 100%;">
-                        <div class="country row">
-                            <p class="col-7"><span class="dot" style="background-color: rgb(227, 30, 30);"></span>United States Of America </p>
-                            <p class="col-5"><span class="dot" style="background-color: rgb(104, 156, 64);"></span>Canada</p>
-                            <p class="col-7"><span class="dot" style="background-color: rgb(228, 86, 34);"></span>Russia</p>
-                            <p class="col-5"><span class="dot" style="background-color: rgb(212, 196, 17);"></span>India</p>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div style="background-color: #ffffff; border-radius: 5px; overflow-x: auto;" class="p-3 end">
-                    <div class="d-flex justify-content-between mb-2">
-                        <h4 class="b-head" style="font-family: sans-serif;">Invoices</h4>
-                        <h4 class="red">View All</h4>
-                    </div>
-                    
-                    <table class="table" style="width: 100%;">
-                        <thead class="table-heading">
-                            <tr>
-                                <th>INVOICE</th>
-                                <th>COMPANY NAME</th>
-                                <th>EMAIL</th>
-                                <th>DUE DATE</th>
-                                <th>STATUS</th>
-                                <th>AMOUNT</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>651535</td>
-                                <td>Public Adjusting Firm</td>
-                                <td>georgia.young@example.com</td>
-                                <td>24 May,2020</td>
-                                <td><span class="paid">Paid</span></td>
-                                <td>$47,800</td>
-                            </tr>
-                            <tr>
-                                <td>558612</td>
-                                <td>Other</td>
-                                <td>jessica.young@example.com</td>
-                                <td>24 May,2020</td>
-                                <td><span class="paid">Paid</span></td>
-                                <td>$98,800</td>
-                            </tr>
-                            <tr>
-                                <td>558612</td>
-                                <td>Vendor</td>
-                                <td>alma.lawson@example.com</td>
-                                <td>8 Sep,2020</td>
-                                <td><span class="paid">Paid</span></td>
-                                <td>$20,900</td>
-                            </tr>
-                            <tr>
-                                <td>558612</td>
-                                <td>Vendor</td>
-                                <td>alma.lawson@example.com</td>
-                                <td>8 Sep,2020</td>
-                                <td><span class="paid">Paid</span></td>
-                                <td>$20,900</td>
-                            </tr>
-                            <tr>
-                                <td>558612</td>
-                                <td>Vendor</td>
-                                <td>alma.lawson@example.com</td>
-                                <td>8 Sep,2020</td>
-                                <td><span class="failed">Failed</span></td>
-                                <td>$10,200</td>
-                            </tr>
-                            <tr>
-                                <td>558612</td>
-                                <td>Vendor</td>
-                                <td>alma.lawson@example.com</td>
-                                <td>8 Sep,2020</td>
-                                <td><span class="pending">Pending</span></td>
-                                <td>$12,600</td>
-                            </tr>
-                            <tr>
-                                <td>558612</td>
-                                <td>Vendor</td>
-                                <td>alma.lawson@example.com</td>
-                                <td>8 Sep,2020</td>
-                                <td><span class="paid">Paid</span></td>
-                                <td>$11,170</td>
-                            </tr>
-                            <tr>
-                                <td>558612</td>
-                                <td>Vendor</td>
-                                <td>alma.lawson@example.com</td>
-                                <td>8 Sep,2020</td>
-                                <td><span class="failed">Failed</span></td>
-                                <td>$28,000</td>
-                            </tr>
-                            <tr>
-                                <td>44903</td>
-                                <td>Insurance Carrier</td>
-                                <td>curtis.weaver@example.com</td>
-                                <td>21 Sep,2020</td>
-                                <td><span class="paid">Paid</span></td>
-                                <td>$10,000</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    
-                </div>
-            </div>
-            
-        </div>
-    </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
