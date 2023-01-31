@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +7,54 @@
     <title>Inner page</title>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="javascript" href="./js/custom.js">
+    <link rel="stylesheet" media="(max-width:450px)" href="smartphone.css">
 </head>
 
 <body>
     <div class="container-fluid p-0" style="background-color: #fafafa;">
         <div class="row  mt-4 mx-3" style="background-color: #ffffff;">
             <div class="col-3 text-start">
-                <img src="./images/menu-bar.png" class="me-4">
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><img src="images/menu-bar.png" alt=""></button>
+                        
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasTop"   aria-labelledby="offcanvasTopLabel">
+                
+            <div class="offcanvas-header">
+                                
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+                            
+            <div class="offcanvas-body">
+
+            <a href="dashboard.html" class="btn d-flex justify-content-start" style="width: 183px;height: 43px;" role="button">
+            <img class="dashImages" src="images/dashboard-default.png" style="width: 8mm; height: 8mm;" alt="Dashboard"> <p>&nbsp;&nbsp;Dashboard</p></a>
+            
+            <a href="innerpage.html" class="btn d-flex justify-content-start" style="width: 183px;height: 43px;" role="button">
+            <img class="dashImages" src="images/graph-active.png" style="width: 8mm; height: 8mm;" alt="Analysis"> &nbsp;&nbsp;Analysis</a>
+            
+            <a href="#" class="btn d-flex justify-content-start" style="width: 183px;height: 43px;" role="button">
+            <img class="dashImages" src="images/inbox-default.png" style="width: 8mm; height: 8mm;" alt="Inbox">  &nbsp;&nbsp;Inbox</a>
+                
+            <a href="#" class="btn d-flex justify-content-start" style="width: 183px;height: 43px;" role="button">
+            <img class="dashImages" src="images/clock-default.png" style="width: 8mm; height: 8mm;" alt="History">  &nbsp;&nbsp;History</a>
+                        
+            <a href="#" class="btn d-flex justify-content-start" style="width: 183px;height: 43px;" role="button">
+            <img class="dashImages" src="images/user-default.png" style="width: 8mm; height: 8mm;" alt="Users">  &nbsp;&nbsp;Users</a>
+                                
+            <a href="#" class="btn d-flex justify-content-start" style="width: 183px;height: 43px;" role="button">
+            <img class="dashImages" src="images/maintenance-default.png" style="width: 8mm; height: 8mm;" alt="Maintenance">  &nbsp;&nbsp;Maintenance</a>
+                                
+            <a href="#" class="btn d-flex justify-content-start" style="width: 183px;height: 43px;" role="button">
+            <img class="dashImages" src="images/setting-default.png" style="width: 8mm; height: 8mm;" alt="Setting">&nbsp;&nbsp; Setting</a>
+        </div>
+    </div>
                 <img src="./images/header-logo.png" class="me-4" style="width: 3cm;">
             </div>
-            <div class="col-2 text-start">
+            <div class="col-3 text-start s">
                 <img src="./images/search-icon.png" class="icon">
                 <span class="items">Search</span>
             </div>
-            <div class="col-6 text-end">
+            <div class="col-6 text-end" style="padding-left: 3cm;">
                 <img src="./images/notification-icon.png" class="icon">
                 <img src="./images/profile.png" class="fs-2 me-1 ms-5">
                 <span class="name mx-2">John Doe</span>
@@ -30,9 +63,9 @@
         </div>
 
         <div class="dashboard row ">
-            <div class="col-2" style="background-color: #ffffff;">
+            <div class="col-2 sidebar" style="background-color: #ffffff;">
                 <div class="list-group list-group-flush ms-3 mt-4">
-                    <a href="index.html" class="list-group-item items "><img src="./images/dashboard-default.png" class="icon me-2">Dashboard</a>
+                    <a href="dashboard.html" class="list-group-item items "><img src="./images/dashboard-default.png" class="icon me-2">Dashboard</a>
 
                     <a href="#" class="list-group-item items activelink"><img src="./images/graph-active.png" class="icon me-2">Analysis</a>
 
@@ -47,7 +80,7 @@
                     <a href="#" class="list-group-item items"><img src="./images/setting-default.png" class="icon me-2">Setting</a>
                 </div>
             </div>
-            <div class="col-10 p-4">
+            <div class="col-10 p-4" style="background-color: #ecebeb;">
                 <h3 class="d-name">Analysis</h3>
                 <br>
                 <form class="form p-2">
@@ -116,24 +149,26 @@
                 <p class="form-head">Other Design Eslements</p>
                 <div>
                     <p class="sub-head">File Upload</p>
-                    <div class="form-group">
-                        <input type="file" name="filename">
+                    <div class="input-group">
+                        <input type="file" id="upload-btn" name="filename" hidden>
+                        <label for="upload-btn" style="border-radius: 20%; background-color: rgb(255, 255, 255);"><img src="./images/cloud-upload-icon.png" alt="" > Upload</label>
+                        <span id="file-chosen" style="font-size: smaller; color: #ADADAD; padding-left: 10px;">No file chosen</span>
                     </div>
                 </div>
 
                 <p class="sub-head">Radio Button</p>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input red" type="radio" name="exampleRadios" id="Radios1" value="option1" style="color: red;">
-                    <label class="form-check-label" for="Radios1">option 1</label>
+                <div class="radio">
+                    <input class="radio-input" type="radio" name="exampleRadios" id="Radios1" value="option1">
+                    <label class="radio-label" for="Radios1">option 1</label>
                 </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input red" type="radio" name="exampleRadios" id="Radios2" value="option2" style="background-color: red;" checked>
-                    <label class="form-check-label" for="Radios2">option 2</label>
+                <div class="radio">
+                    <input class="radio-input" type="radio" name="exampleRadios" id="Radios2" value="option2"  style="background-color: red;" checked>
+                    <label class="radio-label" for="Radios2">option 2</label>
                 </div>
                <br>
                 <p class="sub-head">Checkbox</p>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="Checkbox1" value="option1" style="color: red;">
+                    <input class="form-check-input" type="checkbox" id="Checkbox1" value="option1">
                     <label class="form-check-label" for="Checkbox1">Option 1</label>
                 </div>
                 <div class="form-check form-check-inline">
@@ -145,7 +180,7 @@
                 <div class="row row-cols-2">
                     <div class="col message mb-3" style="border-color: red;"><img src="./images/error-icon.png" class="icon"><span style="color: red;">This is an error Message</span></div>
                     <div class="col message mb-3" style="border-color: rgb(48, 194, 243);"><img src="./images/info-icon.png" class="icon"><span style="color: rgb(48, 194, 243);">This is an information Message!</span></div>
-                    <div class="col message mb-3" style="border-color:rgb(223, 198, 52) ;"><img src="./images/warning-icon.png" class="icon"><span style="color: rgb(223, 198, 52);">This is an Warning Message</span></div>
+                    <div class="col message mb-3" style="border-color:rgb(223, 198, 52);"><img src="./images/warning-icon.png" class="icon"><span style="color: rgb(223, 198, 52);">This is an Warning Message</span></div>
                     <div class="col message mb-3" style="border-color: rgb(13, 162, 13);"><img src="./images/success-icon.png" class="icon"><span style="color: rgb(13, 162, 13);">This is an Success Message!</span></div>
                 </div>
 
@@ -154,17 +189,50 @@
                     <button type="button" class="btn btn-danger" style="border-radius: 23px;">Primary</button>
                     <button type="button" class="btn btn-outline-danger" style="border-radius: 23px;">Secondry</button>
                 </div>
-
                 <p class="sub-head">Tabs</p>
-                <div class="d-flex py-2 tab" style="border-bottom: 1px solid #ADADAD;">
-                    <div class="me-3 "><span class="activetab">Tab 1</span></div>
-                    <div class="me-3"><span>Tab 2</span></div>
-                    <div class="me-3"><span>Tab 3</span></div>
-                </div>
-                
-                <p class="mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</p>
+                <div class="d-flex py-2 tab" style="border-bottom: 1px solid #ADADAD; font-size: medium;">
+
+                <button type="button"  id="button1" style="color: rgb(195, 8, 8);" onclick="FirstTab()">Tab 1</button>
+                <button type="button" id="button2" onclick="SecondtTab()">Tab 2</button>
+                <button type="button" id="button3" onclick="ThirdTab()">Tab 3</button>
+              </div>           
+              
+              <div class="tab-content">
+                <span id="tab1-content" style="display:block;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</span>
+                <span id="tab2-content" style="display: none;">Tab 2 Content</span>
+                <span id="tab3-content" style="display: none;">Tab 3 Content</span>
+              </div>
+            <script>
+                function FirstTab(){
+                    document.getElementById("tab1-content").style.display = "block";
+                    document.getElementById("tab2-content").style.display = "none";
+                    document.getElementById("tab3-content").style.display = "none";
+                    document.getElementById("button1").style.color = "red";
+                    document.getElementById("button2").style.color = "black";
+                    document.getElementById("button3").style.color = "black";
+                 
+
+                }
+                function SecondtTab(){
+                    document.getElementById("tab1-content").style.display = "none";
+                    document.getElementById("tab2-content").style.display = "block";
+                    document.getElementById("tab3-content").style.display = "none";
+                    document.getElementById("button2").style.color = "red";
+                    document.getElementById("button1").style.color = "black";
+                    document.getElementById("button3").style.color = "black";
+                }
+                function ThirdTab(){
+                    document.getElementById("tab1-content").style.display = "none";
+                    document.getElementById("tab2-content").style.display = "none";
+                    document.getElementById("tab3-content").style.display = "block";
+                    document.getElementById("button3").style.color = "red";
+                    document.getElementById("button1").style.color = "black";
+                    document.getElementById("button2").style.color = "black";
+                }
+            </script>
             </div>
         </div>
     </div>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -7,16 +7,51 @@
     <title>Dashboard page</title>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="javascript" href="./js/custom.js">
+    <link rel="stylesheet" media="(max-width:450px)" href="smartphone.css">
 </head>
 
 <body>
     <div class="container-fluid p-0" style="background-color: #fafafa;">
         <div class="row  mt-4 mx-3" style="background-color: #ffffff;">
             <div class="col-3 text-start">
-                <img src="./images/menu-bar.png" class="me-4">
+                <button class="btn" type="button"data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                <img src="images/menu-bar.png" alt=""></button>
+                        
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasTop"   aria-labelledby="offcanvasTopLabel">
+                
+            <div class="offcanvas-header">
+                                
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+                            
+            <div class="offcanvas-body">
+
+            <a href="dashboard.html" class="btn d-flex justify-content-start" style="width: 183px;height: 43px;" role="button">
+            <img class="dashImages" src="images/dashboard-active.png" style="width: 8mm; height: 8mm;" alt="Dashboard"> <p>&nbsp;&nbsp;Dashboard</p></a>
+            
+            <a href="innerpage.html" class="btn d-flex justify-content-start" style="width: 183px;height: 43px;" role="button">
+            <img class="dashImages" src="images/graph-default.png" style="width: 8mm; height: 8mm;" alt="Analysis"> &nbsp;&nbsp;Analysis</a>
+            
+            <a href="#" class="btn d-flex justify-content-start" style="width: 183px;height: 43px;" role="button">
+            <img class="dashImages" src="images/inbox-default.png" style="width: 8mm; height: 8mm;" alt="Inbox">  &nbsp;&nbsp;Inbox</a>
+                
+            <a href="#" class="btn d-flex justify-content-start" style="width: 183px;height: 43px;" role="button">
+            <img class="dashImages" src="images/clock-default.png" style="width: 8mm; height: 8mm;" alt="History">  &nbsp;&nbsp;History</a>
+                        
+            <a href="#" class="btn d-flex justify-content-start" style="width: 183px;height: 43px;" role="button">
+            <img class="dashImages" src="images/user-default.png" style="width: 8mm; height: 8mm;" alt="Users">  &nbsp;&nbsp;Users</a>
+                                
+            <a href="#" class="btn d-flex justify-content-start" style="width: 183px;height: 43px;" role="button">
+            <img class="dashImages" src="images/maintenance-default.png" style="width: 8mm; height: 8mm;" alt="Maintenance">  &nbsp;&nbsp;Maintenance</a>
+                                
+            <a href="#" class="btn d-flex justify-content-start" style="width: 183px;height: 43px;" role="button">
+            <img class="dashImages" src="images/setting-default.png" style="width: 8mm; height: 8mm;" alt="Setting">&nbsp;&nbsp; Setting</a>
+        </div>
+    </div>
                 <img src="./images/header-logo.png" class="me-4" style="width: 3cm;">
             </div>
-            <div class="col-3 text-start">
+            <div class="col-3 text-start s">
                 <img src="./images/search-icon.png" class="icon">
                 <span class="items">Search</span>
             </div>
@@ -29,11 +64,11 @@
         </div>
 
         <div class="dashboard row ">
-            <div class="col-2" style="background-color: #ffffff;">
+            <div class="col-2 sidebar" style="background-color: #ffffff;">
                 <div class="list-group list-group-flush ms-3 mt-4">
-                    <a href="index.html" class="list-group-item items activelink"><img src="./images/dashboard-active.png" class="icon me-2">Dashboard</a>
+                    <a href="dashboard.html" class="list-group-item items activelink"><img src="./images/dashboard-active.png" class="icon me-2">Dashboard</a>
 
-                    <a href="#" class="list-group-item items"><img src="./images/graph-default.png" class="icon me-2">Analysis</a>
+                    <a href="innerpage.html" class="list-group-item items"><img src="./images/graph-default.png" class="icon me-2">Analysis</a>
 
                     <a href="#" class="list-group-item items"><img src="./images/inbox-default.png" class="icon me-2">Inbox</a>
 
@@ -46,15 +81,16 @@
                     <a href="#" class="list-group-item items"><img src="./images/setting-default.png" class="icon me-2">Setting</a>
                 </div>
             </div>
-            <div class="col-10 ps-5 pe-0 pt-4" style="background-color: #e2dddd; padding-bottom: 10mm;">
+            <div class="col-10 ps-5 pe-0 pt-4" style="background-color: #ecebeb; padding-bottom: 10mm;">
 
-                <p class="d-name">Dashboard</p>
+            <p class="d-name">Dashboard</p>
 
                 <div class="d-flex flex-row content" style="display: flex;">
-                    <div class="p-4 d-flex me-4 justify-content-between" style="background-color: #ffffff;">
+                    <div class="p-4 d-flex me-4 justify-content-between" style="background-color: #ffffff; ">
                         <div class="pe-3 mb-3 image">
                             <img src="./images/star.png" class="product">
                         </div>
+                        
                         <div>
                             <p class="numbers">23,456</p>
                             <p style="font-size:medium;">New Products</p>
@@ -89,7 +125,7 @@
                     </div>
                     <div class="p-4 d-flex me-4 justify-content-between" style="background-color: #ffffff;">
                         <div class="pe-3 mb-3 image">
-                            <img src="./images/star.png" class="product">
+                            <img src="./images/money-bag.png" class="product">
                         </div>
                         <div>
                             <p class="numbers">33,5342</p>
@@ -98,19 +134,21 @@
                     </div>
                 </div>
                 <br>
-                <div class="row mt-3" style="background-color: white;">
-                    <div class="col-8 p-3 graph">
+                <div class="row mt-3 middle" style="background-color:#ecebeb ;">
+                    <div class="col-8 p-2 graph" style="background-color: white;">
                         <div class="d-flex justify-content-between">
-                            <h4 class="b-head">Sales</h4>
-                            <div style="color: #adadad;" class="me-5">
-                                <span class="p-2">Weekly</span> <span class="p-2">Monthly</span> <span class="m-2 pb-2" style="color: #c8242f; border-bottom:1px solid #c8242f;">Yearly</span>
+                            <h4 class="b-head" style="font-family: sans-serif;">Sale</h4>
+                            <div style="color: #adadad;">
+                                <span class="p-1">Weekly</span> <span class="p-1">Monthly</span> <span class="m-2 pb-2" style="color: #c8242f; border-bottom:1px solid #c8242f;">Yearly</span>
                             </div>
                         </div>
-                        <img src="./images/data-graph.png" class="img-flluid">
+                        <img src="./images/data-graph.png" style="width: 100%;" class="img-flluid">
                     </div>
-                    <div class="col-4 p-3">
-                        <h4 class="b-head">Sales by Country</h4>
-                        <img src="./images/pie-chart.png" class="ps-5">
+                    
+                   
+                    <div class="col-4 p-2 chart" style="background-color: rgb(255, 255, 255);  ">
+                        <h4 class="b-head" style="font-family: sans-serif;">Sales by Country</h4>
+                        <img src="./images/pie-chart.png" class="ps-5" style="width: 100%;">
                         <div class="country row">
                             <p class="col-7"><span class="dot" style="background-color: rgb(227, 30, 30);"></span>United States Of America </p>
                             <p class="col-5"><span class="dot" style="background-color: rgb(104, 156, 64);"></span>Canada</p>
@@ -120,13 +158,13 @@
                     </div>
                 </div>
                 <br>
-                <div style="background-color: #ffffff; border-radius: 5px;" class="p-5">
+                <div style="background-color: #ffffff; border-radius: 5px; overflow-x: auto;" class="p-3 end">
                     <div class="d-flex justify-content-between mb-2">
-                        <h4 class="b-head">Invoices</h4>
+                        <h4 class="b-head" style="font-family: sans-serif;">Invoices</h4>
                         <h4 class="red">View All</h4>
                     </div>
                     
-                    <table class="table">
+                    <table class="table" style="width: 100%;">
                         <thead class="table-heading">
                             <tr>
                                 <th>INVOICE</th>
@@ -218,5 +256,8 @@
             
         </div>
     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

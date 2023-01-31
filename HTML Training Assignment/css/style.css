@@ -85,11 +85,30 @@ body{
 }
 .image {
     height: 1cm;
-    width: 1cm;
+    width: 1.3cm;
+}
+.image img{
+    padding-top: 3mm;
+    
+}
+.end{
+    margin-right: 1cm;
+    overflow-x: auto;
+    
+}
+.middle{
+    margin-right: 1cm;
+    justify-content: space-between;
+    
+}
+
+.col-8 {
+    flex: 0 0 auto;
+    width: auto;
 }
 .content{
     display: inline-flex;
-    padding-left: 1cm;
+    padding-left: 0.3cm;
     padding-right: 1cm;
     justify-content: space-between;
 }
@@ -184,6 +203,71 @@ body{
         font-size: 15px;
         padding: 3px 2px;
 }
+.text-start .btn{
+    width: 1cm;
+    padding: 0px;
+}
+
+@media screen and (max-width:1100px){
+    .content{
+        justify-content: center;
+    }
+    .p-4{
+        justify-content: center;
+    }
+    
+
+}
+@media screen and (max-width:1062px) {
+    .content{
+        flex-wrap: wrap;
+    }
+    .offcanvas-body{
+        font-size: x-small;
+    }
+    .chart{
+        justify-content: center;
+    }
+    .sidebar{
+        display: none;
+    }
+}
+@media screen and(max-width:993px) {
+    .d-name{
+        margin-bottom: 1cm;
+    }
+    .content{
+        padding-top: 2cm;
+    }
+}
+@media screen and(max-width:945px){
+    .table{
+        width: auto;
+        height: auto;
+        justify-content: center;
+    }
+    .chart img{
+        width: auto;
+        justify-content: center;
+    }
+    .end{
+        width: auto;
+        justify-content: center;
+        flex: wrap;
+    }
+}
+@media screen and (max-width:660px){
+  p.col-10{
+    margin: bottom 1cm; 
+  }
+}
+
+@media screen and (max-width:590px){
+    .chart{
+        flex: wrap;
+    }
+}
+
 
 /* innerpage */
 
@@ -193,6 +277,13 @@ body{
     color: #3E3e3e;
     font-weight: bold;
 }
+.inputbox{
+    color: #c8242f;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0,65em;
+    padding: 0 10px;
+
+}
 .sub-head {
     font-size: 20px;
     line-height: 24px;
@@ -200,7 +291,9 @@ body{
     margin: 21px 0 15px 0;
     font-weight: bold;
 }
-
+.radio{
+    display: inline;
+}
 .form-group input {
     border: 2px red;
 }
@@ -213,6 +306,22 @@ body{
     width: 15cm;
     
 }
+.input-group label{
+    background-color: white;
+    color: #c8242f;
+    
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    border-color: #c8242f;
+}
+#file-chosen{
+    margin-left: 0.3rem;
+    font-family: sans-serif;
+}
+.form-check-input:checked{
+    color: red;
+}
 .btn {
     width: 3cm;
     height: 1cm;
@@ -222,9 +331,97 @@ body{
     color: #adadad;
     font-size: 15px;
     font-weight: 550;
+    text-decoration: none;
+    outline: none;
+    margin-right: 12px; 
+    font-weight: bold;
+}
+.tab button{
+    /* outline: none !important */
+    border: none;
+    border-bottom: 3px solid white;
+    background-color: white !important;
+    /* border-radius: 18px; */
 }
 .activetab {
     color: #c8242f;
     border-bottom: 3px solid #c8242f;
     padding: 8px 16px;
 }
+
+@media screen and (max-width: 1100px) {
+    .sidebar {
+        display: none;
+
+    }
+}
+@media screen and (max-width: 847px) {
+    .me-4 {
+            margin-right: 1.5rem !important;
+            margin-top: -50px;
+            margin-left: 40px;
+        }
+}
+@media screen and (max-width: 725px) {
+.text-end{
+    margin-left: 200px;
+    margin-top: -60px;
+
+}
+.text-start span{
+    padding-top: 18px;
+}
+
+
+}
+@media screen and (max-width:750px) {
+    .row{
+        width: auto;
+        font-size: smaller;
+
+    }
+    .text-end{
+        width: auto;
+        
+    }
+    span.items{
+            margin-top: 50px;
+        }
+    .icon {
+          width: 18px;
+          height: 18px;
+          margin-top: 18px;
+         }
+   
+}
+@media screen and (max-width: 560px) {
+        .text-end {
+                margin-left: 150px;
+                margin-top: -60px;
+                
+            }
+}
+
+@media screen and (max-width: 600px) {
+    .first {
+       justify-content: center;
+    text-align: center;
+        padding: inherit;
+        margin: 5rem 0px 0px 0px;
+    }
+.header {
+    flex-direction: column;
+}
+}
+@media screen and (max-width: 634px) {
+    .s{
+        display: none;
+    }
+}
+@media screen and (max-width: 350px){
+    .first{
+        padding-left: 10px;
+    }
+}
+
+
