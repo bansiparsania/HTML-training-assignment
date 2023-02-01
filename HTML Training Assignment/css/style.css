@@ -399,6 +399,14 @@ body{
 
 
 }
+@media screen and (max-width: 600px) {
+    .name{
+        display: none;
+    }
+    .ms-5{
+        padding-left: -3rem;
+    }
+}
 @media screen and (max-width:750px) {
     .row{
         width: auto;
@@ -419,6 +427,12 @@ body{
          }
    
 }
+@media screen and (max-width: 398px) {
+.ms-5 {
+        padding-left: -3rem;
+    }
+}
+
 @media screen and (max-width: 560px) {
         .text-end {
                 margin-left: 150px;
